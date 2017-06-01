@@ -1,0 +1,69 @@
+﻿/*
+            Options
+                1)  Is_ActivateCoupons : Not sure of it's meaning but it results
+                                    in either the CalculateCoupon or CaulateWithdrawal
+                                    methods being Invoked
+
+            Method:
+                Get the Starting date.  
+
+                ApplyPartSurrenders     (Optional)
+                ApplyPremiumAlterations (Optional)
+                ApplyCharges
+                ApplySPI (Single Premium Injections)
+                ApplyPremiumPayment
+                ApplyLifeStyle
+                AddInterestForMonth
+                ApplyLoaltyBonus    **Condition.  
+                                    This is to be performed OLNY if at 
+                                    the  of the Projection Period
+                CalculatInitalUnitDiscountFactor
+                CalculateBonus
+                Is_ActivateCoupons ? CalculateCoupon() : CaulateWithdrawal()
+                IsTAxApplicable ? ApplyDeemedTax
+
+            
+            BreakDown
+                ApplyPartSurrenders :
+                    this is a monster and i have no idea what it does
+
+                ApplyPremiumAlterations
+                    Development Notes:
+                        This is an Optional.  
+
+                    Validations:
+                        N/A for SinglePremiums and PaidUp
+                    
+                    Method:
+                        1) Determine if premium amount is an increases or decreases.
+                        2) Check effective date of premium to see if it is applicable for this projection month
+                        3) Call ApplyPremiumIncrease || ApplyPremiumDecrease (Creates INCI Records)
+
+                    Sub Methods:
+                        ApplyPremiumIncrease
+
+                            Note:
+                                Creates a payment history item with the new Premium amount.  In C++ this is 
+                                Understandable as it uses a Register (Collection) of INCI's (Premium 
+                                Payment History Records) for functions to calculate the total number of premiums
+                                paid for projection functions.
+
+                        
+                            
+                            Method:
+                                1) Get the total amount of premiums that have been paid thus far
+                                2) Calculate the new premium amount Current + increases) (seems redundant)
+                                3) Get the allocation rates for (total premium amount + increase amount)
+                                4) Create a new INCI Record.  This is a ghost payment.  A Future payment which is used 
+                                    for projection purposes.  The INCI that is created must contains the new premium
+                                    amount and then the relevant Allocation Rate records are obtained and applied
+
+                        ApplyPremiumDecrease
+                            
+                            Note:  
+                                Don't think that this is really needed.  In C++ maybe but
+                                i would Imagination that the effort to regenerate the entire 
+                                Payment history would be less than to try to modify it.
+
+                            
+        */

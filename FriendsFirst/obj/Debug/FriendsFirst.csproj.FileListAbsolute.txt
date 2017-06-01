@@ -1,0 +1,10 @@
+F:\Projects\FriendsFirst\FriendsFirst\obj\Debug\FriendsFirst.csprojResolveAssemblyReference.cache
+F:\Projects\FriendsFirst\FriendsFirst\bin\Debug\FriendsFirst.dll.config
+F:\Projects\FriendsFirst\FriendsFirst\bin\Debug\FriendsFirst.dll
+F:\Projects\FriendsFirst\FriendsFirst\bin\Debug\FriendsFirst.pdb
+F:\Projects\FriendsFirst\FriendsFirst\bin\Debug\Autofac.dll
+F:\Projects\FriendsFirst\FriendsFirst\bin\Debug\Castle.Core.dll
+F:\Projects\FriendsFirst\FriendsFirst\bin\Debug\Autofac.xml
+F:\Projects\FriendsFirst\FriendsFirst\bin\Debug\Castle.Core.xml
+F:\Projects\FriendsFirst\FriendsFirst\obj\Debug\FriendsFirst.dll
+F:\Projects\FriendsFirst\FriendsFirst\obj\Debug\FriendsFirst.pdb

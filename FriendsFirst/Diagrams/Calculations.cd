@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="FriendsFirst.Calculations.Annuities.AdjustedAnnuity" Collapsed="true">
+    <Position X="26.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Calculations\Annuities\AdjustedAnnuity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Calculations.Annuities.Annuity" Collapsed="true">
+    <Position X="27.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Calculations\Annuities\Annuity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Calculations.Annuities.CPA" Collapsed="true">
+    <Position X="28.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Calculations\Annuities\CPA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Calculations.Bonuses.Bonus" Collapsed="true">
+    <Position X="23" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Calculations\Bonuses\Bonus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Calculations.Bonuses.Lotalty" Collapsed="true">
+    <Position X="25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAACgAQAAAAAAAAAABAAA=</HashCode>
+      <FileName>Calculations\Bonuses\LotaltyBonus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Calculations.Calculation" Collapsed="true">
+    <Position X="21.5" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Calculations\Calculation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Calculations.Calculation&lt;R, I&gt;" Collapsed="true">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAACAAAAAAAAAgAIABAAI=</HashCode>
+      <FileName>Calculations\Calculation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Calculations.InitalUnitInvestment" Collapsed="true">
+    <Position X="20.5" Y="8.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EABAAAgIAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAAACA=</HashCode>
+      <FileName>Calculations\InitalUnitInvestment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Calculations.MarketValueAdjustmentFactor" Collapsed="true">
+    <Position X="18" Y="8.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAABAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Calculations\MarketValueAdjustment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Calculations.PartSurrender" Collapsed="true">
+    <Position X="23" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAABCAA=</HashCode>
+      <FileName>Calculations\PartSurrender.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Calculations.Indexations.PolicyChargeIndexation" Collapsed="true">
+    <Position X="18.25" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Calculations\Indexations\PolicyChargeIndexation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Calculations.Indexations.PremiumIndexation" Collapsed="true">
+    <Position X="14.5" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Calculations\Indexations\PremiumIndexation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Calculations.SumAtRisk" Collapsed="true">
+    <Position X="24.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Calculations\SumAtRisk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Calculations.Charges.BenefitCharge" Collapsed="true">
+    <Position X="16.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Calculations\Charges\BenefitCharge.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Calculations.Charges.PolicyCharge" Collapsed="true">
+    <Position X="20.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Calculations\Charges\PolicyCharge.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Calculations.Taxes.GruTaxFactor" Collapsed="true">
+    <Position X="18.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Calculations\Taxes\GruTaxFactor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Calculations.Taxes.MaxTax" Collapsed="true">
+    <Position X="17" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Calculations\Taxes\MaxTax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Calculations.Taxes.SSIATaxFactor" Collapsed="true">
+    <Position X="20.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Calculations\Taxes\SSIATaxFactor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Calculations.FundInterest" Collapsed="true">
+    <Position X="25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Calculations\FundInterest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

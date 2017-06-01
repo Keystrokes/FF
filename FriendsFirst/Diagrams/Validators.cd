@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FriendsFirst.Validators.InvalidPremiumStatusCheck" Collapsed="true">
+    <Position X="5.75" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validations\InvalidPremiumStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Validators.MaturesWithin" Collapsed="true">
+    <Position X="9" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAACAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validations\MaturesWithin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Validators.CoveredAreOfMinimumAge" Collapsed="true">
+    <Position X="7" Y="6.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Validations\MinAgeValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Validators.MinimimFundLimit" Collapsed="true">
+    <Position X="10" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validations\MinimimFundLimit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Validators.MinimumTermsRemaining" Collapsed="true">
+    <Position X="12.75" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Validations\MinTermLeftValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Validators.NotOnFirstTerm" Collapsed="true">
+    <Position X="15.5" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validations\NotOnFirstTerm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Validators.OnlyAtRenewal" Collapsed="true">
+    <Position X="13" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validations\OnlyAtRenewal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Validators.PremiumDue" Collapsed="true">
+    <Position X="16" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validations\PremiumDue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Validators.Validator&lt;R, C&gt;" Collapsed="true">
+    <Position X="11.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Validations\Validator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Validators.Validator" Collapsed="true">
+    <Position X="11.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAIAAgAAAAAAAgAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Validations\Validator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

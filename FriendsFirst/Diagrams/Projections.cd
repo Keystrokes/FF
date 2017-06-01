@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FriendsFirst.Projections.PolicyReview">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Projections\PolicyReview.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Projections.PremiumAlteration">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Projections\PremiumAlteration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FriendsFirst.Projections.Projection&lt;T&gt;">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAACAAAAAAAoAAAAAAIAAAEAAA=</HashCode>
+      <FileName>Projections\Projection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="FriendsFirst.Projections.ProjectedContract&lt;C&gt;">
+    <Position X="3" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAIAAAADABAAAAAAAAAAAgCACBEAAoAAAAAAQ=</HashCode>
+      <FileName>Projections\ProjectedContract.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
