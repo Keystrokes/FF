@@ -1,0 +1,66 @@
+﻿@model FriendsFirst.Web.Models.Projections.Projection
+
+@using (Html.BeginForm("Project", "Projections", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row">
+        <div class="col-md-6">
+            @Html.Partial("_Contract", Model.Contract)
+        </div>
+
+        <div class="col-md-6">
+            <div class="row">
+                @Html.Partial("_ContractSummary", Model.Contract)
+
+                <div class="form-group col-md-offset-11">
+                    <input type="submit" value="Project" class="btn btn-default" />
+                </div>
+
+            </div>
+            @Html.Partial("_ProjectionsChart", Model.Projections)
+        </div>
+
+    </div>
+ 
+}
+
+<script type="text/javascript">
+//$(function () {
+//    //Loop through all Labels with class 'editable'.
+//    $(".editable").each(function () {
+//        //Reference the Label.
+//        var label = $(this);
+
+//        //Highlight the label 
+//        label.css("font-weight", "Bold");
+
+//        //Add a TextBox next to the Label.
+//        label.after("<input type = 'text' style = 'display:none' />");
+
+//        //Reference the TextBox.
+//        var textbox = $(this).next();
+
+//        //Set the name attribute of the TextBox.
+//        textbox[0].name = this.id.replace("lbl", "txt");
+
+//        //Assign the value of Label to TextBox.
+//        textbox.val(label.html());
+
+//        //When Label is clicked, hide Label and show TextBox.
+//        label.click(function () {
+//            $(this).hide();
+//            $(this).next().show();
+//        });
+
+//        //When focus is lost from TextBox, hide TextBox and show Label.
+//        textbox.focusout(function () {
+//            $(this).hide();
+//            $(this).prev().html($(this).val());
+//            $(this).prev().show();
+//        });
+//    });
+//});
+</script>
+
+    

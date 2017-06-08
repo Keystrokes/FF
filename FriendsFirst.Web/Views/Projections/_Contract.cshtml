@@ -1,0 +1,61 @@
+﻿@model FriendsFirst.Contracts.Contract
+
+
+<div class="panel-group" id="pnlContract" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="pnlContract-heading-one">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#pnlContract" href="#pnlContract-one" aria-expanded="true" aria-controls="pnlContract-one">
+                    Coverages
+                </a>
+            </h4>
+        </div>
+        <div id="pnlContract-one" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="pnlContract-heading-one">
+            <div class="panel-body">
+                @Html.Partial("_Coverages", Model.Coverages)
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="pnlContract-heading-two">
+            <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#pnlContract" href="#pnlContract-two" aria-expanded="false" aria-controls="pnlContract-two">
+                    Funds
+                </a>
+            </h4>
+        </div>
+        <div id="pnlContract-two" class="panel-collapse collapse" role="tabpanel" aria-labelledby="pnlContract-heading-two">
+            <div class="panel-body">
+                @Html.Partial("_Funds", Model.Funds)
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="pnlContract-heading-three">
+            <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#pnlContract" href="#pnlContract-three" aria-expanded="false" aria-controls="pnlContract-three">
+                    Product
+                </a>
+            </h4>
+        </div>
+        <div id="pnlContract-three" class="panel-collapse collapse" role="tabpanel" aria-labelledby="pnlContract-heading-three">
+            <div class="panel-body">
+                @Html.Partial("_Product",Model.Product)
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="pnlContract-heading-four">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#pnlContract" href="#pnlContract-four" aria-expanded="true" aria-controls="pnlContract-four">
+                    Premium
+                </a>
+            </h4>
+        </div>
+        <div id="pnlContract-four" class="panel-collapse collapse" role="tabpanel" aria-labelledby="pnlContract-heading-four">
+            <div class="panel-body">
+                @Html.Partial("_Premium", Model.Premium)
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+﻿@model FriendsFirst.Contracts.Contract 
+
+    <div>
+        <div class="row">
+            <div class="col-md-6">Sum At Risk</div>
+            <div class="col-md-6">@Model.SumAtRisk().ToString("C")</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">Covered</div>
+            <div class="col-md-6">
+                @foreach (var covered in Model.Coverages)
+                {
+                    <div class="col-md-12">@covered.Name</div>
+                }
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">Gross</div>
+            <div class="col-md-6">@Model.Gross().ToString("C")</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">Product</div>
+            <div class="col-md-6">@Model.Product.Description</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">Premium</div>
+            <div class="col-md-6">@Model.Premium.Amount.ToString("C")</div>
+        </div>
+    </div>
+

@@ -1,0 +1,58 @@
+﻿@model IEnumerable<FriendsFirst.Funds.Fund>
+
+<
+@foreach (var fund in Model)
+{
+    <div>
+        <div class="row">
+            <div class="col-md-6">@Html.LabelFor(m => fund.Name) </div>
+            <div class="col-md-6">@Html.DisplayFor(m => fund.Name)</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">@Html.LabelFor(m => fund.Units.Inital) </div>
+            <div class="col-md-6">@Html.DisplayFor(m => fund.Units.Inital)</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">@Html.LabelFor(m => fund.Units.Accumulated) </div>
+            <div class="col-md-6">@Html.DisplayFor(m => fund.Units.Accumulated) </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">@Html.LabelFor(m => fund.Units.Bid) </div>
+            <div class="col-md-6">@Html.DisplayFor(m => fund.Units.Bid) </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">@Html.LabelFor(m => fund.Units.Capital) </div>
+            <div class="col-md-6">@Html.DisplayFor(m => fund.Units.Capital)</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">@Html.LabelFor(m => fund.GrowthRate) </div>
+            <div class="col-md-6">@Html.DisplayFor(m => fund.GrowthRate)</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">@Html.LabelFor(m => fund.InitalUnitDiscountFactor) </div>
+            <div class="col-md-6">@Html.DisplayFor(m => fund.InitalUnitDiscountFactor)</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">@Html.LabelFor(m => fund.InvestmentPercent) </div>
+            <div class="col-md-6">@Html.DisplayFor(m => fund.InvestmentPercent)</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">@Html.LabelFor(m => fund.ManagmentCharge) </div>
+            <div class="col-md-6">@Html.EditorFor(m => fund.ManagmentCharge)</div>
+        </div>
+    </div>
+
+
+
+
+
+}
+

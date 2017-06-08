@@ -1,0 +1,24 @@
+﻿@model FriendsFirst.Premiums.Premium
+
+<div>
+    <div class="row">
+        <div class="col-md-6">@Html.LabelFor(m=>m.Amount)</div>
+        <div class="col-md-6 editable">@Html.EditorFor(m => m.Amount)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">@Html.LabelFor(m => m.Frequencey)</div>
+        <div class="col-md-6">@Html.EditorFor(m => m.Frequencey)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">@Html.LabelFor(m => m.IndexationRate)</div>
+        <div class="col-md-6 editable">@Html.EditorFor(m => m.IndexationRate)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">@Html.LabelFor(m => m.Status)</div>
+        <div class="col-md-6">@Html.EditorFor(m => m.Status)</div>
+    </div>
+
+</div>

@@ -1,0 +1,74 @@
+﻿@model FriendsFirst.Products.Product
+
+<div>
+    <div class="row">
+        <div class="col-md-6">@Html.LabelFor(m => m.Code) </div>
+        <div class="col-md-6 ">@Html.DisplayFor(m => m.Code)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">@Html.LabelFor(m => m.Description) </div>
+        <div class="col-md-6">@Html.DisplayFor(m => m.Description)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">@Html.LabelFor(p => p.AdjustedAnnuityRate)</div>
+        <div class="col-md-6 editable">@Html.EditorFor(p => p.AdjustedAnnuityRate)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">@Html.LabelFor(p => p.ApplyPolicyChargeOnPaidUp)</div>
+        <div class="col-md-6"> @Html.EditorFor(p => p.ApplyPolicyChargeOnPaidUp)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">@Html.LabelFor(p => p.BaseMortalityYear)</div>
+        <div class="col-md-6"> @Html.EditorFor(p => p.BaseMortalityYear)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">@Html.LabelFor(p => p.Charge)</div>
+        <div class="col-md-6"> @Html.EditorFor(p => p.Charge)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">@Html.LabelFor(p => p.ChargeIncreasesRate) </div>
+        <div class="col-md-6">@Html.EditorFor(p => p.ChargeIncreasesRate)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">@Html.LabelFor(p => p.ChargePercent) </div>
+        <div class="col-md-6">@Html.EditorFor(p => p.ChargePercent)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">@Html.LabelFor(p => p.EscalationRate) </div>
+        <div class="col-md-6">@Html.EditorFor(p => p.EscalationRate)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">@Html.LabelFor(p => p.ExitTaxRate) </div>
+        <div class="col-md-6">@Html.EditorFor(p => p.ExitTaxRate)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">@Html.LabelFor(p => p.Guaranteed) </div>
+        <div class="col-md-6">@Html.EditorFor(p => p.Guaranteed)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">@Html.LabelFor(p => p.MinFundAmount) </div>
+        <div class="col-md-6">@Html.EditorFor(p => p.MinFundAmount)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">@Html.LabelFor(p => p.MortalityImpactFactor) </div>
+        <div class="col-md-6">@Html.EditorFor(p => p.MortalityImpactFactor)</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">@Html.LabelFor(p => p.SSIS)</div>
+        <div class="col-md-6"> @Html.EditorFor(p => p.SSIS)</div>
+    </div>
+
+</div>
