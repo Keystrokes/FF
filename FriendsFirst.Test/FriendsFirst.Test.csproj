@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95F67409-5D2A-422D-81BE-31782DF308B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FriendsFirst.Test</RootNamespace>
+    <AssemblyName>FriendsFirst.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac, Version=4.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.4.5.0\lib\net45\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.4.0.0\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Moq, Version=4.7.8.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.7.8\lib\net45\Moq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="Calculations\Bonuses\Bonus_Tests.cs" />
+    <Compile Include="Calculations\FundAmount_Tests.cs" />
+    <Compile Include="Calculations\InvestmentPercent_Tests.cs" />
+    <Compile Include="Calculations\SumAssured_Tests.cs" />
+    <Compile Include="Calculations\Charges\BenefitCharge_Tests.cs" />
+    <Compile Include="Calculations\Indexation_Tests.cs" />
+    <Compile Include="Calculations\SumAtRisk_Tests.cs" />
+    <Compile Include="Calculations\Taxes\GruTaxFactor_Tests.cs" />
+    <Compile Include="Calculations\Taxes\MaxTax_Tests.cs" />
+    <Compile Include="Demos\Cease_50416217.cs" />
+    <Compile Include="Demos\SavingProjection_50068296.cs" />
+    <Compile Include="Export\Export_Tests.cs" />
+    <Compile Include="Extension_Tests.cs" />
+    <Compile Include="Calculations\PartSurrenders_Tests.cs" />
+    <Compile Include="Funds\UnitWithProfitFund_Tests.cs" />
+    <Compile Include="Funds\UnitLinkedFund_Tests.cs" />
+    <Compile Include="Calculations\Charges\PolicyCharge_Tests.cs" />
+    <Compile Include="Calculations\Annuity_Tests.cs" />
+    <Compile Include="Funds\InvestedFunds_Tests.cs" />
+    <Compile Include="Projections\Premium_Tests.cs" />
+    <Compile Include="Projections\DailyInterest_Tests.cs" />
+    <Compile Include="Demos\Savings_Projection_50416352_Test.cs" />
+    <Compile Include="Projections\Projection_Tests.cs" />
+    <Compile Include="Validations\InvalidPremiumStatusCheck_Tests.cs" />
+    <Compile Include="Validations\MinFundLimit_Tests.cs" />
+    <Compile Include="Validations\OnlyAtRenewal_Tests.cs" />
+    <Compile Include="Validations\MinimumTermsRemaining_Tests.cs" />
+    <Compile Include="Validations\CoveredAreOfMinimumAge_Tests.cs" />
+    <Compile Include="Funds\Unit_Tests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FriendsFirst\FriendsFirst.csproj">
+      <Project>{25bb1e8c-8e76-4fe1-840d-bc4a106cd5fd}</Project>
+      <Name>FriendsFirst</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ExampleWorkings\50416217\50416217_Normal_Savings.7z" />
+    <None Include="ExampleWorkings\50416217\Cease_50416217_00_STANDARD.csv" />
+    <None Include="ExampleWorkings\50416217\Cease_EBQ2_Pol_50416217_ZSR_02_RP_0.00_0.000_MonthlyProj_STANDARD.csv" />
+    <None Include="ExampleWorkings\50416217\Continue_50416217_00_STANDARD.log" />
+    <None Include="ExampleWorkings\50416217\Continue_EBQ2_Pol_50416217_ZSR_01_RP_0.00_0.000_MonthlyProj_STANDARD.csv" />
+    <None Include="ExampleWorkings\EBQ2_Pol_50068296_VIP_02_RP_0.00_0.000_MonthlyProj_Cease_STANDARD.xlsx" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Premiums\" />
+    <Folder Include="TestContracts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ExampleWorkings\50416217\Images\CeaseResults.JPG" />
+    <Content Include="ExampleWorkings\50416217\Images\ContinueResults.JPG" />
+    <Content Include="ExampleWorkings\50416217\Images\CoverageDetails.JPG" />
+    <Content Include="ExampleWorkings\50416217\Images\PolicyDetails.JPG" />
+    <Content Include="ReadMe.txt" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
