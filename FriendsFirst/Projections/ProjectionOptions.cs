@@ -18,5 +18,10 @@ namespace FriendsFirst.Projections
         public DateTime? Premium_Cessaion { get; set; }
         public DateTime? Coverage_Cessation { get; set; }
 
+        /// <summary>
+        /// States if charges are to be applied to the projection.
+        /// </summary>
+        public bool ExcludeCharges { get; set; }
+
     }
 }

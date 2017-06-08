@@ -68,8 +68,11 @@ namespace FriendsFirst.Projections
             this.Contract.Product.Charge += PolicyChargeIndexation;
 
             //Charges
-            this.Contract.Funds -= PolicyCharge;
-            this.Contract.Funds -= BenefitCharge;
+            if (!this.Options.ExcludeCharges)
+            {
+                this.Contract.Funds -= PolicyCharge;
+                this.Contract.Funds -= BenefitCharge;
+            }
 
             //Add Fund Interest
             this.Contract.Funds += FundInterest;
